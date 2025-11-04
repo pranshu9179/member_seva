@@ -19,7 +19,8 @@ html {
   font-family: "Hind Siliguri", sans-serif;
   color: #747794;
   overflow-x: hidden;
-  background-color: #e9eeff;
+  /* background-color: #e9eeff; */
+  background-color: #f0dc95;
   scrollbar-width: thin;
   padding-right: 0 !important;
   letter-spacing: -0.5px;
@@ -2766,6 +2767,7 @@ li.suha-dropdown-menu .dropdown-trigger-btn.active i {
 }
 
 /* --- Enhanced Category Card Styling --- */
+/* --- Enhanced Category Card Styling --- */
 
 .catagory-card {
   border-radius: 15px;
@@ -2778,7 +2780,7 @@ li.suha-dropdown-menu .dropdown-trigger-btn.active i {
 .catagory-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  background-color: #e5e9f3; /* subtle gradient effect */
+  background: linear-gradient(145deg, #eaf1ff, #ffffff); /* soft blue-white gradient */
 }
 
 /* Animate on scroll */
@@ -2802,7 +2804,7 @@ li.suha-dropdown-menu .dropdown-trigger-btn.active i {
 
 .catagory-card:hover img {
   transform: scale(1.1) rotate(3deg);
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
 }
 
 /* Text Enhancement */
@@ -2824,23 +2826,26 @@ li.suha-dropdown-menu .dropdown-trigger-btn.active i {
   }
 }
 
+/* 📱 Mobile View (3 cards per row) */
 @media (max-width: 768px) {
   .col-4 {
-    width: 50%;
+    width: 33.33%;
   }
 }
 
+/* Extra small devices (narrow screens) */
 @media (max-width: 480px) {
   .col-4 {
-    width: 100%;
+    width: 33.33%; /* keep 3 per row even on mobile */
   }
   .catagory-card img {
-    max-height: 60px;
+    max-height: 50px;
   }
   .catagory-card span {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
+
 
 /* category card new code 2770 - 2845 */
 
